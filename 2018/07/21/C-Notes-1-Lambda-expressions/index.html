@@ -14,27 +14,25 @@
     
     
     
-    <title>Hello, I&#39;m Jaxin | Welcome here, this is Jaxin&#39;s littel nest. | 我们的愿望是世界和平 (～￣▽￣)～</title>
+    <title>C++ Notes(1): Lambda expressions | Welcome here, this is Jaxin&#39;s littel nest. | 我们的愿望是世界和平 (～￣▽￣)～</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="theme-color" content="#3F51B5">
     
     
-    <meta name="keywords" content="闲广录">
-    <meta name="description" content="“经霜雪而无迹，照日光而无景，扶摇抮抱羊角而上，经纪山川，蹈腾昆仑。”">
-<meta name="keywords" content="闲广录">
+    <meta name="keywords" content="C++">
+    <meta name="description" content="Lambda expressions▌语法                         [ captures ] &amp;lt;tparams&amp;gt;(可选)( params ) specifiers(可选) exception attr -&amp;gt; ret requires(可选){ body }                 (1)                            [ c">
+<meta name="keywords" content="C++">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello, I&#39;m Jaxin">
-<meta property="og:url" content="http://yoursite.com/2018/07/11/Hello-I-m-Jaxin/index.html">
+<meta property="og:title" content="C++ Notes(1): Lambda expressions">
+<meta property="og:url" content="http://yoursite.com/2018/07/21/C-Notes-1-Lambda-expressions/index.html">
 <meta property="og:site_name" content="Welcome here, this is Jaxin&#39;s littel nest.">
-<meta property="og:description" content="“经霜雪而无迹，照日光而无景，扶摇抮抱羊角而上，经纪山川，蹈腾昆仑。”">
+<meta property="og:description" content="Lambda expressions▌语法                         [ captures ] &amp;lt;tparams&amp;gt;(可选)( params ) specifiers(可选) exception attr -&amp;gt; ret requires(可选){ body }                 (1)                            [ c">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://sharvaridesai.github.io/hexo-theme-edinburgh-demo//images/unsplash3.jpg">
-<meta property="og:updated_time" content="2018-07-20T14:27:40.275Z">
+<meta property="og:updated_time" content="2018-07-21T08:03:18.758Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello, I&#39;m Jaxin">
-<meta name="twitter:description" content="“经霜雪而无迹，照日光而无景，扶摇抮抱羊角而上，经纪山川，蹈腾昆仑。”">
-<meta name="twitter:image" content="https://sharvaridesai.github.io/hexo-theme-edinburgh-demo//images/unsplash3.jpg">
+<meta name="twitter:title" content="C++ Notes(1): Lambda expressions">
+<meta name="twitter:description" content="Lambda expressions▌语法                         [ captures ] &amp;lt;tparams&amp;gt;(可选)( params ) specifiers(可选) exception attr -&amp;gt; ret requires(可选){ body }                 (1)                            [ c">
     
         <link rel="alternate" type="application/atom+xml" title="Welcome here, this is Jaxin&#39;s littel nest." href="/atom.xml">
     
@@ -122,7 +120,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">Hello, I&#39;m Jaxin</div>
+        <div class="flex-col header-title ellipsis">C++ Notes(1): Lambda expressions</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -144,15 +142,13 @@
 <header class="content-header post-header">
 
     <div class="container fade-scale">
-        <h1 class="title">Hello, I&#39;m Jaxin</h1>
+        <h1 class="title">C++ Notes(1): Lambda expressions</h1>
         <h5 class="subtitle">
             
-                <time datetime="2018-07-11T01:12:52.000Z" itemprop="datePublished" class="page-time">
-  2018-07-11
+                <time datetime="2018-07-21T02:19:11.000Z" itemprop="datePublished" class="page-time">
+  2018-07-21
 </time>
 
-
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/I-m-Jaxin/">I'm Jaxin</a></li></ul>
 
             
         </h5>
@@ -169,22 +165,20 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#序"><span class="post-toc-number">1.</span> <span class="post-toc-text">序</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Lambda-expressions"><span class="post-toc-number">1.</span> <span class="post-toc-text">Lambda expressions</span></a></li></ol>
         </nav>
     </aside>
 
 
-<article id="post-Hello-I-m-Jaxin"
+<article id="post-C-Notes-1-Lambda-expressions"
   class="post-article article-type-post fade" itemprop="blogPost">
 
     <div class="post-card">
-        <h1 class="post-card-title">Hello, I'm Jaxin</h1>
+        <h1 class="post-card-title">C++ Notes(1): Lambda expressions</h1>
         <div class="post-meta">
-            <time class="post-time" title="2018-07-11 09:12:52" datetime="2018-07-11T01:12:52.000Z"  itemprop="datePublished">2018-07-11</time>
+            <time class="post-time" title="2018-07-21 10:19:11" datetime="2018-07-21T02:19:11.000Z"  itemprop="datePublished">2018-07-21</time>
 
             
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/I-m-Jaxin/">I'm Jaxin</a></li></ul>
-
 
 
             
@@ -195,12 +189,9 @@
 
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <p><center><br>    <img src="https://sharvaridesai.github.io/hexo-theme-edinburgh-demo//images/unsplash3.jpg" width="100%" height="100%"><br>    <font face="黑体" size="8"><sub>“</sub></font>经霜雪而无迹，照日光而无景，扶摇抮抱羊角而上，经纪山川，蹈腾昆仑。<font face="黑体" size="14"><sub><sub>”</sub></sub></font><br></center><br><a id="more"></a></p>
-<h2 id="序"><a href="#序" class="headerlink" title="序"></a>序</h2><p>值此开博，谢@<a href="https://homxuwang.github.io/" target="_blank" rel="noopener">Homxu</a>相助。此间诸博客，或为远近见闻，或为理论研究，或为捉虫游戏，或为其他杂文散记，行之至远，方得趣味。今博客既成，日后若以他人学识为纲，未免白费一番心思，自当以个人见解，驱虫以得草木之茵茵。<br><br>总之，我们的宗旨是：兄长，我想带一虫回云深不知处，带回去，藏起来( • ̀ω•́ )✧。</p>
-<blockquote>
-<p>　　<font face="黑体">“事实是，当你犹豫要不要去做一件事的时候，其实你内心已经有了选择，只是你还没有充足的理由去说服自己。”</font></p><p align="right">东野圭吾《解忧杂货铺》</p><p></p>
-</blockquote>
-<p>So, let’s go.</p>
+            <h2 id="Lambda-expressions"><a href="#Lambda-expressions" class="headerlink" title="Lambda expressions"></a>Lambda expressions</h2><p><strong>▌语法</strong></p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><br>    <tr><br>        <td colspan="10" class="t-sdsc-sep"><p align="left"><br>            <code><b>[</b></code> <span class="t-spar">captures</span> <code><b>]</b></code> <span class="t-spar">&lt;tparams&gt;</span><span class="t-mark">(可选)<code><b>(</b></code> <span class="t-spar">params</span> <code><b>)</b></code> <span class="t-spar">specifiers</span><span class="t-mark">(可选)</span> <span class="t-spar">exception</span> <span class="t-spar">attr</span> <code><b>-&gt;</b></code> <span class="t-spar">ret</span> <span class="t-spar">requires</span><span class="t-mark">(可选)<code><b>{</b></code> <span class="t-spar">body</span> <code><b>} </b></code><br>        </span></span></p></td><br>        <td><p align="right">(1)</p></td><br>    </tr><br>    <tr><br>        <td colspan="10" class="t-sdsc-sep"><br>            <code><b>[</b></code> <span class="t-spar">captures</span> <code><b>]</b></code> <code><b>(</b></code> <span class="t-spar">params</span> <code><b>)</b></code> <code><b>-&gt;</b></code> <span class="t-spar">ret</span> <code><b>{</b></code> <span class="t-spar">body</span> <code><b>} </b></code><br>        </td><br>        <td><p align="right">(2)</p></td><br>    </tr><br>    <tr><br>        <td colspan="10" class="t-sdsc-sep"> <code><b>[</b></code> <span class="t-spar">captures</span> <code><b>]</b></code> <code><b>(</b></code> <span class="t-spar">params</span> <code><b>)</b></code> <code><b>{</b></code> <span class="t-spar">body</span> <code><b>} </b></code><br>        </td><br>        <td><p align="right">(3)</p></td><br>    </tr><br>    <tr><br>        <td colspan="10" class="t-sdsc-sep"> <code><b>[</b></code> <span class="t-spar">captures</span> <code><b>]</b></code> <code><b>{</b></code> <span class="t-spar">body</span> <code><b>} </b></code><br>        </td><br>        <td><p align="right">(4)</p></td><br>    </tr><br></table>
+
 
         </div>
 
@@ -209,12 +200,12 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2018-07-20T14:27:40.275Z" itemprop="dateUpdated">2018-07-20 22:27:40</time>
+    最后更新时间：<time datetime="2018-07-21T08:03:18.758Z" itemprop="dateUpdated">2018-07-21 16:03:18</time>
 </span><br>
 
 
         
-        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2018/07/11/Hello-I-m-Jaxin/" target="_blank" rel="external">http://yoursite.com/2018/07/11/Hello-I-m-Jaxin/</a>
+        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2018/07/21/C-Notes-1-Lambda-expressions/" target="_blank" rel="external">http://yoursite.com/2018/07/21/C-Notes-1-Lambda-expressions/</a>
         
     </div>
     
@@ -235,7 +226,7 @@
 
         <div class="post-footer">
             
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/闲广录/">闲广录</a></li></ul>
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li></ul>
 
 
             
@@ -245,7 +236,7 @@
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2018/07/11/Hello-I-m-Jaxin/&title=《Hello, I'm Jaxin》 — Welcome here, this is Jaxin's littel nest.&pic=http://yoursite.com/img/cimu.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2018/07/21/C-Notes-1-Lambda-expressions/&title=《C++ Notes(1): Lambda expressions》 — Welcome here, this is Jaxin's littel nest.&pic=http://yoursite.com/img/cimu.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -255,22 +246,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2018/07/11/Hello-I-m-Jaxin/&title=《Hello, I'm Jaxin》 — Welcome here, this is Jaxin's littel nest.&source=        “经霜雪而无迹，照日光而无景，扶摇抮抱羊角而上，经纪山川，蹈腾昆仑。”" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2018/07/21/C-Notes-1-Lambda-expressions/&title=《C++ Notes(1): Lambda expressions》 — Welcome here, this is Jaxin's littel nest.&source=A de-lovely boy who aspire a beautiful code." data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2018/07/11/Hello-I-m-Jaxin/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2018/07/21/C-Notes-1-Lambda-expressions/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Hello, I'm Jaxin》 — Welcome here, this is Jaxin's littel nest.&url=http://yoursite.com/2018/07/11/Hello-I-m-Jaxin/&via=http://yoursite.com" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《C++ Notes(1): Lambda expressions》 — Welcome here, this is Jaxin's littel nest.&url=http://yoursite.com/2018/07/21/C-Notes-1-Lambda-expressions/&via=http://yoursite.com" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2018/07/11/Hello-I-m-Jaxin/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2018/07/21/C-Notes-1-Lambda-expressions/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -290,21 +281,14 @@
     </div>
 
     
-<nav class="post-nav flex-row flex-justify-between">
-  
-    <div class="waves-block waves-effect prev">
-      <a href="/2018/07/21/C-Notes-1-Lambda-expressions/" id="post-prev" class="post-nav-link">
-        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
-        <h4 class="title">C++ Notes(1): Lambda expressions</h4>
-      </a>
-    </div>
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
   
 
   
     <div class="waves-block waves-effect next">
-      <a href="/2018/07/11/hello-world/" id="post-next" class="post-nav-link">
+      <a href="/2018/07/11/Hello-I-m-Jaxin/" id="post-next" class="post-nav-link">
         <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
-        <h4 class="title">Hello World</h4>
+        <h4 class="title">Hello, I&#39;m Jaxin</h4>
       </a>
     </div>
   
@@ -418,7 +402,7 @@
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2018/07/11/Hello-I-m-Jaxin/&title=《Hello, I'm Jaxin》 — Welcome here, this is Jaxin's littel nest.&pic=http://yoursite.com/img/cimu.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2018/07/21/C-Notes-1-Lambda-expressions/&title=《C++ Notes(1): Lambda expressions》 — Welcome here, this is Jaxin's littel nest.&pic=http://yoursite.com/img/cimu.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -428,22 +412,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2018/07/11/Hello-I-m-Jaxin/&title=《Hello, I'm Jaxin》 — Welcome here, this is Jaxin's littel nest.&source=        “经霜雪而无迹，照日光而无景，扶摇抮抱羊角而上，经纪山川，蹈腾昆仑。”" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2018/07/21/C-Notes-1-Lambda-expressions/&title=《C++ Notes(1): Lambda expressions》 — Welcome here, this is Jaxin's littel nest.&source=A de-lovely boy who aspire a beautiful code." data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2018/07/11/Hello-I-m-Jaxin/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2018/07/21/C-Notes-1-Lambda-expressions/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Hello, I'm Jaxin》 — Welcome here, this is Jaxin's littel nest.&url=http://yoursite.com/2018/07/11/Hello-I-m-Jaxin/&via=http://yoursite.com" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《C++ Notes(1): Lambda expressions》 — Welcome here, this is Jaxin's littel nest.&url=http://yoursite.com/2018/07/21/C-Notes-1-Lambda-expressions/&via=http://yoursite.com" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2018/07/11/Hello-I-m-Jaxin/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2018/07/21/C-Notes-1-Lambda-expressions/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -454,7 +438,7 @@
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACNUlEQVR42u3aQW7DMAwF0dz/0i5QdJfamU/aCESNV4GTynpesCTF1wtfx+/1fufs/vtvzn5P1rztkiFDxrKM4/Lim77G9J/74XXIkCFjAwbZSieYEuTZU8g/ABkyZMggW7zGHOElQ4YMGX0G2S4P1l8LuDJkyFiKwQMfD8S1dR6vxWXIkLEgo192Pvf5wfMNGTJkLMKoFZbXK6RJXmc/f2vKkCFjNINshbfV+i25NLoGb1SGDBnLMnjJWmuBpeMaxeMBGTJkbMPgQbYTmgksbtjJkCFjA0anBc/HxZ5YR4YMGTswrhOyzmhFGqx5KI9rcRkyZIxj1JJCsvVO4kjuy5AhYyrjrtTtrnYbGbz4UIvLkCFjKIMPOgQtsE77DATffwKuDBkyhjL6w6z9x/Ailh9IyJAhYx4jDaC8BUZgaRF7uhMZMmQMZdQica2t3ymDb5sZkSFDxoIMnrTxJXh4TQ8AikWsDBkyFmekbbK0EK0dUt4wwCpDhoxBDN5KS1O3tFjtf5YhQ8ZURm3Yq3N4QNLB+LXKkCFjGwYvR/ttMpIC8qMFGTJkzGbwYjU4ES2tz/8WkWTIkDGIcYQXH4/oBGKeOAbdPhkyZCzLSINd7THpwQAva2OYDBkylmXwIFsrKWtHBXHLT4YMGRsweKCsfcvTzbSUlSFDhgzSsauF4zQQo9RQhgwZMnACR5prZLyD70eGDBk7MNKQyh9fg6XNPhkyZMxm1IYkOqEzPYS4ASBDhoxVGT+BPvUbs+aUiQAAAABJRU5ErkJggg==" alt="微信分享二维码">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACMklEQVR42u3awY7DIAxF0fz/T2ekbqug++x0JMxlVc20hJOFZXhcFx73Z/D/3g9jPdv3N18eMmTI2JZxL8f3g9cLepph/f2nv5C1yZAh4xzGuowSGFn6+jWlpVmGDBkyyKLXLR0pnfy5MmTIkMEL7rodJNvRWhsqQ4YMGWRqchxWm403nS/sxWXIkLEhIw0G/vPzD/MNGTJkbMK4w9FvB0lgGa9KhgwZoxk8Vkzjgdp2lLyax3IsQ4aMoYxOyUs3nP2rG49/lyFDxvEMUoh55Jke28WRgAwZMoYyOm0ZjyrT8spfigwZMmYz0itZb12hSK+d8aIvQ4aMqYx+i1Y7YuPBA2pVZciQMZTR2azWLofxJQZxqQwZMg5gkEXwhjINCdLGUYYMGWcyyNTpUX4HEF/7kCFDxgGMTum8wIiP9XEhDr4kQ4aMbRn9drBTlMk8cXggQ4aMoYz0+L6TkZIDuPTFyZAhYzaj1qLxz7yxSy+QyZAh4xwGL4KdBXWay6A0y5AhYyijFih2tqBptIB+K0OGjAMYaQyZNoK8jKahJoowZciQsTmjf6miFi2kISg61JMhQ8ZQxh2OdNG1Ys2fK0OGjBMYtTJHtr5p45jOU8TIkCFjWwYpsrV4svbmyBrQz2TIkDGOkRbZ9QNq8We6fQ1ut8mQIeMYxrvhAcHHd0ZkyJAhoxQkkGO1F34rQ4aMAxhpmeMRQq1lTAMDGTJkzGbUgoF0k9lpNDvFWoYMGZsz/gBE1YmHj299YgAAAABJRU5ErkJggg==" alt="微信分享二维码">
 </div>
 
 

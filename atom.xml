@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-07-20T14:27:40.275Z</updated>
+  <updated>2018-07-21T08:03:18.758Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>C++ Notes(1): Lambda expressions</title>
+    <link href="http://yoursite.com/2018/07/21/C-Notes-1-Lambda-expressions/"/>
+    <id>http://yoursite.com/2018/07/21/C-Notes-1-Lambda-expressions/</id>
+    <published>2018-07-21T02:19:11.000Z</published>
+    <updated>2018-07-21T08:03:18.758Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Lambda-expressions"><a href="#Lambda-expressions" class="headerlink" title="Lambda expressions"></a>Lambda expressions</h2><p><strong>▌语法</strong></p><table border="0" cellpadding="0" cellspacing="0" width="100%"><br>    <tr><br>        <td colspan="10" class="t-sdsc-sep"><p align="left"><br>            <code><b>[</b></code> <span class="t-spar">captures</span> <code><b>]</b></code> <span class="t-spar">&lt;tparams&gt;</span><span class="t-mark">(可选)<code><b>(</b></code> <span class="t-spar">params</span> <code><b>)</b></code> <span class="t-spar">specifiers</span><span class="t-mark">(可选)</span> <span class="t-spar">exception</span> <span class="t-spar">attr</span> <code><b>-&gt;</b></code> <span class="t-spar">ret</span> <span class="t-spar">requires</span><span class="t-mark">(可选)<code><b>{</b></code> <span class="t-spar">body</span> <code><b>} </b></code><br>        </span></span></p></td><br>        <td><p align="right">(1)</p></td><br>    </tr><br>    <tr><br>        <td colspan="10" class="t-sdsc-sep"><br>            <code><b>[</b></code> <span class="t-spar">captures</span> <code><b>]</b></code> <code><b>(</b></code> <span class="t-spar">params</span> <code><b>)</b></code> <code><b>-&gt;</b></code> <span class="t-spar">ret</span> <code><b>{</b></code> <span class="t-spar">body</span> <code><b>} </b></code><br>        </td><br>        <td><p align="right">(2)</p></td><br>    </tr><br>    <tr><br>        <td colspan="10" class="t-sdsc-sep"> <code><b>[</b></code> <span class="t-spar">captures</span> <code><b>]</b></code> <code><b>(</b></code> <span class="t-spar">params</span> <code><b>)</b></code> <code><b>{</b></code> <span class="t-spar">body</span> <code><b>} </b></code><br>        </td><br>        <td><p align="right">(3)</p></td><br>    </tr><br>    <tr><br>        <td colspan="10" class="t-sdsc-sep"> <code><b>[</b></code> <span class="t-spar">captures</span> <code><b>]</b></code> <code><b>{</b></code> <span class="t-spar">body</span> <code><b>} </b></code><br>        </td><br>        <td><p align="right">(4)</p></td><br>    </tr><br></table>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;Lambda-expressions&quot;&gt;&lt;a href=&quot;#Lambda-expressions&quot; class=&quot;headerlink&quot; title=&quot;Lambda expressions&quot;&gt;&lt;/a&gt;Lambda expressions&lt;/h2&gt;&lt;p&gt;&lt;stron
+      
+    
+    </summary>
+    
+    
+      <category term="C++" scheme="http://yoursite.com/tags/C/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello, I&#39;m Jaxin</title>
