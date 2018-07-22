@@ -30,7 +30,7 @@
 <meta property="og:description" content="“Lambda 表达式”是一个匿名函数，其基于数学中的 λ\lambdaλ 演算得名，直接对应于其中的Lambda抽象，是一个匿名函数，即没有函数名的函数。Lambda表达式可以表示闭包，但这一概念与数学上的闭包不同。本文旨在介绍Lamda表达式的语法规则以及在程序中的常规用法。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://i-msdn.sec.s-msft.com/dynimg/IC251606.png">
-<meta property="og:updated_time" content="2018-07-22T08:49:07.614Z">
+<meta property="og:updated_time" content="2018-07-22T08:51:27.774Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="C++ Notes(1): Lambda expressions">
 <meta name="twitter:description" content="“Lambda 表达式”是一个匿名函数，其基于数学中的 λ\lambdaλ 演算得名，直接对应于其中的Lambda抽象，是一个匿名函数，即没有函数名的函数。Lambda表达式可以表示闭包，但这一概念与数学上的闭包不同。本文旨在介绍Lamda表达式的语法规则以及在程序中的常规用法。">
@@ -254,7 +254,7 @@
 (5) 返回类型；<br>  
 (6) 表达式的匿名函数体。<br>
 </p>
-<p>这里需要详细介绍捕获外部参数列表中参数的几种形式，网络中大多数列子都用到了这一部分的内容：<br>
+<p>这里需要详细介绍捕获外部参数列表中参数的几种形式，网络中大多数列子都用到了这一部分的内容<sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup>：<br>
 -<code>[]</code>：没有使用任何函数对象参数。<br>
 -<code>[=]</code>：函数体内可以使用Lambda所在作用范围内所有可见的局部变量（包括Lambda所在类的<code>this</code>），并且是值传递方式（相当于编译器自动为我们按值传递了所有局部变量）。<br>
 -<code>[&amp;]</code>：函数体内可以使用Lambda所在作用范围内所有可见的局部变量（包括Lambda所在类的<code>this</code>），并且是引用传递方式（相当于编译器自动为我们按引用传递了所有局部变量）。<br>
@@ -273,6 +273,8 @@
 </li>
 <li id="fn2" class="footnote-item"><p>微软帮助中心.Lambda Expression Syntax.<a href="https://msdn.microsoft.com/zh-cn/library/azure/dd293603(v=vs.120).aspx" target="_blank" rel="noopener">Link</a> <a href="#fnref2" class="footnote-backref">↩︎</a></p>
 </li>
+<li id="fn3" class="footnote-item"><p>糖炒栗子Sugar.C++ Lambda表达式用法.<a href="https://www.cnblogs.com/alwayswangzi/p/7137427.html" target="_blank" rel="noopener">Link</a> <a href="#fnref3" class="footnote-backref">↩︎</a></p>
+</li>
 </ol>
 </section>
 
@@ -283,7 +285,7 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2018-07-22T08:49:07.614Z" itemprop="dateUpdated">2018-07-22 16:49:07</time>
+    最后更新时间：<time datetime="2018-07-22T08:51:27.774Z" itemprop="dateUpdated">2018-07-22 16:51:27</time>
 </span><br>
 
 
