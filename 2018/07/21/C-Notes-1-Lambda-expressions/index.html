@@ -30,7 +30,7 @@
 <meta property="og:description" content="“Lambda 表达式”是一个匿名函数，其基于数学中的 λ\lambdaλ 演算得名，直接对应于其中的Lambda抽象，是一个匿名函数，即没有函数名的函数。Lambda表达式可以表示闭包，但这一概念与数学上的闭包不同。本文旨在介绍Lamda表达式的语法规则以及在程序中的常规用法。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://i-msdn.sec.s-msft.com/dynimg/IC251606.png">
-<meta property="og:updated_time" content="2018-07-23T03:02:29.382Z">
+<meta property="og:updated_time" content="2018-07-23T03:08:01.764Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="C++ Notes(1): Lambda expressions">
 <meta name="twitter:description" content="“Lambda 表达式”是一个匿名函数，其基于数学中的 λ\lambdaλ 演算得名，直接对应于其中的Lambda抽象，是一个匿名函数，即没有函数名的函数。Lambda表达式可以表示闭包，但这一概念与数学上的闭包不同。本文旨在介绍Lamda表达式的语法规则以及在程序中的常规用法。">
@@ -198,7 +198,7 @@
 在 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>λ</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">λ</span></span></span></span> 演算中，每个表达式都代表一个只有单独参数的函数，这个函数的参数本身也是一个只有单一参数的函数，同时，函数的值又是一个只有单一参数的函数。函数是通过 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>λ</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">λ</span></span></span></span> 表达式匿名地定义的，这个表达式说明了此函数将对其参数进行什么操作。例如，函数 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mi>x</mi><mo>+</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">f(x)=x+2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathit">x</span><span class="mclose">)</span><span class="mrel">=</span><span class="mord mathit">x</span><span class="mbin">+</span><span class="mord mathrm">2</span></span></span></span> 可以用 λ 演算表示为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>λ</mi><mtext> </mtext><mtext> </mtext><mi>x</mi><mi mathvariant="normal">.</mi><mi>x</mi><mo>+</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">\lambda\ \ x.x+2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.77777em;vertical-align:-0.08333em;"></span><span class="base textstyle uncramped"><span class="mord mathit">λ</span><span class="mord mspace"> </span><span class="mord mspace"> </span><span class="mord mathit">x</span><span class="mord mathrm">.</span><span class="mord mathit">x</span><span class="mbin">+</span><span class="mord mathrm">2</span></span></span></span>。<br><br>
 在C++语言中，其语法规则如下:<br></p>
 <p><strong>▌语法形式</strong><sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup><br></p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[captures] &lt;tparams&gt;(可选) (params) specifiers(可选) -&gt; ret &#123;body&#125;</span><br><span class="line">[captures] (params) -&gt; ret &#123;body&#125;		</span><br><span class="line">[captures] (params) &#123;body&#125;</span><br><span class="line">[captures] &#123;body&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[captures] &lt;tparams&gt;(可选) (params) specifiers(可选) -&gt; ret &#123;body&#125;</span><br><span class="line">[captures] (params) -&gt; ret &#123;body&#125;		</span><br><span class="line">[captures] (params) &#123;body&#125;</span><br><span class="line">[captures] &#123;body&#125;</span><br></pre></td></tr></table></figure>
 <p style="font-size:14px;line-height:25px">
 上述语法中：<br>
 (1) Lambda表达式的完整声明。<br>
@@ -254,7 +254,7 @@
 (5) 返回类型；<br>  
 (6) 表达式的匿名函数体。<br>
 </p>
-<p>这里需要详细介绍捕获外部参数列表中参数的几种形式，网络中大多数列子都用到了这一部分的内容<sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup>：<br><br>
+<p>这里需要详细介绍捕获外部参数列表中参数的几种形式，下文例子中体现了这一部分的内容<sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup>：<br>
 <code>[]</code>：没有使用任何函数对象参数，不捕获任何对象。<br>
 <code>[=]</code>：函数体内可以使用Lambda所在作用范围内所有可见的局部变量（包括Lambda所在类的<code>this</code>），并且是值传递方式（相当于编译器自动为我们按值传递了所有局部变量）。<br>
 <code>[&amp;]</code>：函数体内可以使用Lambda所在作用范围内所有可见的局部变量（包括Lambda所在类的<code>this</code>），并且是引用传递方式（相当于编译器自动为我们按引用传递了所有局部变量）。<br>
@@ -298,7 +298,7 @@ Lambda函数体可访问其所在主体函数的如下类型的变量：<br>
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2018-07-23T03:02:29.382Z" itemprop="dateUpdated">2018-07-23 11:02:29</time>
+    最后更新时间：<time datetime="2018-07-23T03:08:01.764Z" itemprop="dateUpdated">2018-07-23 11:08:01</time>
 </span><br>
 
 
